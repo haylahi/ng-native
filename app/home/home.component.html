@@ -8,13 +8,13 @@
             <Label [text]="content" textWrap="true" class="m-15"></Label>
         </ScrollView>
     </StackLayout>-->
-    <StackLayout *tabItem="{title: 'Items'}" class="page">
+    <StackLayout *tabItem="{title: 'Items', iconSource: 'res://icon'}" class="page">
         <!--<ns-items ></ns-items>-->
         <!--<page-router-outlet></page-router-outlet>-->
         <router-outlet></router-outlet>
     </StackLayout>
 
-    <StackLayout *tabItem="{title: 'Icon'}">
+    <StackLayout *tabItem="{title: 'Icon', iconSource: 'res://icon'}">
         <Image class="m-t-30 m-b-15" src="res://icon" width="80" height="80"></Image>
         <Label text="NativeScript" textWrap="true" class="h2 m-x-auto" color="blue"></Label>
     </StackLayout>
