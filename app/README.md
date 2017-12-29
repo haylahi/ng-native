@@ -1,25 +1,26 @@
-# NativeScript Angular Template
-
-This template creates a "Hello, world" NativeScript app using TypeScript and Angular.
-
-You can create a new app that uses this template with either the `--template` option.
-
+# NativeScript Angular 
+To install all the packages, open cmd, go to root folder and type command
 ```
-tns create my-app-name --template tns-template-hello-world-ng
+npm install
 ```
 
-Or the `--ng` shorthand.
-
+To run the android app 
 ```
-tns create my-app-name --ng
+tns run android
 ```
 
-> Note: Both commands will create a new NativeScript app that uses the latest version of this template published to [npm] (https://www.npmjs.com/package/tns-template-hello-world-ng).
+To run the ios app
+```
+tns run ios
+```
 
-If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
+Both these commands need their respective emulators.
+
+Follow the root folder Readme.md to create Android Virtual Device using emulator
+
+
+To create new NativeScript Project with the specified template use command
 
 ```
 tns create my-app-name --template https://github.com/NativeScript/template-hello-world-ng.git#master
 ```
-
-**NB:** Please, have in mind that the master branch may refer to dependencies that are not on NPM yet!
