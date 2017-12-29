@@ -8,9 +8,11 @@ import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
-    { path: 'home', component: HomeComponent},
-    { path: "items", component: ItemsComponent },
-    { path: "item/:id", component: ItemDetailComponent },
+    { path: 'home', component: HomeComponent, children: [
+        // { path: '', redirectTo:"/items", pathMatch:"full"},
+        { path: "", component: ItemsComponent },
+        { path: "item/:id", component: ItemDetailComponent },
+    ]},
 ];
 
 @NgModule({

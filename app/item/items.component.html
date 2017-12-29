@@ -10,8 +10,8 @@ So you can still use template expressions, bindings, templates as well as all th
 The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
 http://docs.nativescript.org/ui/action-bar
 -->
-<ActionBar title="My App" class="action-bar">
-</ActionBar>
+<!--<ActionBar title="My App" class="action-bar">
+</ActionBar>-->
 
 <!--
 The StackLayout stacks UI components on the screen — either vertically or horizontally.
@@ -23,12 +23,12 @@ These components make use of several CSS class names that are part of the Native
 core theme, such as p-20, btn, h2, and list-group. You can view a full list of the
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
 -->
-<StackLayout class="page">
+
     <SearchBar (textChange)="onSearch($event)" color="white" ></SearchBar>
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+            <Label [nsRouterLink]="['/home/item', item.id]" [text]="item.name"
                 class="list-group-item"></Label>
         </ng-template>
     </ListView>
-</StackLayout>
+
