@@ -1,0 +1,13 @@
+<ActionBar title="Home Page" class="action-bar">
+
+</ActionBar>
+
+<StackLayout class="page">
+    <Label class="h3 p-15" text="Label (no binding)" textWrap="true"></Label>
+
+    <!-- Label with one-way binding -->
+    <Label text="Hello World" color="white"></Label>
+
+    <Button text="Go to List!!" (tap)="onTap()" ></Button>
+    <Label [text]="tapCountMsg" color="white" class="h1 p-10"></Label>
+</StackLayout>
